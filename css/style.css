@@ -1,7 +1,7 @@
-* {
-	margin: 0;
-	padding: 0;
-}
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,
+pre, form, fieldset, table, th, td { 
+    margin: 0;
+     padding: 0; }
 
 body {
 	font-family: 'Poppins', sans-serif;
@@ -11,6 +11,12 @@ body {
 .container {
 	width: 85%;
     margin: 0 auto;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 img {
@@ -29,7 +35,7 @@ a {
 }
 
 .logo {
-    color: #FFF;
+    margin-top: 10px;
     float: left;
 }
 
@@ -48,7 +54,7 @@ a {
 }
 
 .menu li a:hover {
-    color: #183D5A;
+    color: #962D3E;
 }
 
 .hero {
@@ -71,7 +77,8 @@ a {
     color: #FFF;
     text-align: center;
     margin-top: 150px;
-    font-size: 2em;
+    font-size: 2.5em;
+    transtition: 
 }
 
 .main {
@@ -90,6 +97,11 @@ a {
     margin: 1%;
 }
 
+.video h3:hover, img:hover, img:hover {
+    transform: scale(0.9);
+    transition: transform .2s; 
+}
+
 .video h3 {
     color: #FFF;
 }
@@ -102,4 +114,17 @@ a {
 .subscribe-title {
     color: #FFF;
     padding: 22px 0 20px 0 ;
+}
+
+.footer {
+    width: 100%;
+    height: 70px;
+    background: #191A1C;
+    margin-top: 20px;
+}
+
+.footer p {
+    color: #FFF;
+    text-align: center;
+    padding-top: 20px;
 }
